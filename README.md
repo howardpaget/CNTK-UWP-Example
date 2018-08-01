@@ -2,6 +2,9 @@
 
 A simple example demonstrating the use of CNTK in a UWP app. The solution provides an end-to-end example from building the model in Python to using the model in a UWP app via a C++/CX wrapper class.
 
+Contents
+---
+
 This solution includes the following projects:
 
 - CNTKFitExample - A Python script that uses CNTK to build, fit, and export a simple linear model.
@@ -13,3 +16,9 @@ This solution includes the following projects:
   - The library provides the class CNTKModel which has a constructor that takes in the file location of model and a method GetPrediction which returns the models prediction for the provided input.
 - CNTKUWPApp - A minimal UWP app that demonstrates using the C++/CX wrapper from C#.
 
+More Info
+---
+
+The Python script is based on this example: https://cntk.ai/pythondocs/CNTK_101_LogisticRegression.html.
+
+The C++/CS wrapper is based on this example: https://github.com/Microsoft/CNTK/tree/release/latest/Examples/Evaluation/UWPImageRecognition.
