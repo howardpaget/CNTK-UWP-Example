@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="CNTKUWPApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CNTKUWPApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="373.43" Width="636.814">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Text="Input Values:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,20,0,0" Width="250"/>
+        <TextBox Name="InputValue1" HorizontalAlignment="Left" Margin="20,47,0,0" Text="0" VerticalAlignment="Top" Width="250" InputScope="Number" TextChanged="InputValue_TextChanged"/>
+        <TextBox Name="InputValue2" HorizontalAlignment="Left" Margin="20,90,0,0" Text="0" VerticalAlignment="Top" Width="250" InputScope="Number" TextChanged="InputValue_TextChanged"/>
+        <TextBlock Name="ModelOutput" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,148,0,0" Width="250"/>
+
+    </Grid>
+</Page>

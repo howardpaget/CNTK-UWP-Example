@@ -7,8 +7,8 @@
     <ProjectGuid>{1A0C1F60-0439-4284-8025-1A0493F81D7B}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CXWrapperExample</RootNamespace>
-    <AssemblyName>CXWrapperExample</AssemblyName>
+    <RootNamespace>CNTKUWPApp</RootNamespace>
+    <AssemblyName>CNTKUWPApp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
@@ -105,6 +105,9 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="CXWrapperExample_TemporaryKey.pfx" />
+    <Content Include="model.model">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
@@ -130,6 +133,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.5</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CNTKLib\CNTKLib.vcxproj">
+      <Project>{2533da17-798d-4c1c-bcb8-7ada88e1c5d3}</Project>
+      <Name>CNTKLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
